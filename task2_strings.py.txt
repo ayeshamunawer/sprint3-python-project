@@ -1,0 +1,14 @@
+messy_names = ['  Wii Sports  ', 'TETRIS', '  mario kart WII']
+game_name = video_game_sales[4][NAME]
+pokemon_word = game_name[0:7]
+print(pokemon_word)
+
+# b) Clean messy game names
+for name in messy_names:
+    cleaned_name = name.strip().lower()
+    print(cleaned_name)
+
+# c) Print formatted summary of the #1 game
+best_game = video_game_sales[0]
+
+print(f"#1 Best Seller: {best_game[NAME]} ({best_game[YEAR]}) - ${best_game[GLOBAL_SALES]}M global sales")
