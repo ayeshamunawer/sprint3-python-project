@@ -1,0 +1,7 @@
+total_global_sales = sum(game[GLOBAL_SALES] for game in video_game_sales)
+
+avg_global_sales = total_global_sales / total_games
+print("Average global sales:", avg_global_sales)
+
+top_game_share = (video_game_sales[0][GLOBAL_SALES] / total_global_sales) * 100
+print("Wii Sports share of total global sales:", top_game_share, "%")
